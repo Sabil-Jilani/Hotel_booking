@@ -258,7 +258,15 @@ main {
 .CTA .reviews > *:not(:last-child) {
   margin-bottom: 2.3rem;
 }
-
+.CTA .reviews::before {
+  content: "\201C";
+  font-family: fantasy;
+  font-size: 9rem;
+  position: absolute;
+  color: rgba(119, 119, 119, 0.18);
+  top: -20px;
+  left: 9px;
+}
 .CTA .reviews__user {
   display: flex;
   align-items: center;
