@@ -100,24 +100,42 @@ main {
 
 .header .search {
   min-width: 35%;
+  transition: all 0.25s ease-in;
+  transform-origin: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .header .search__input {
   outline: none;
   border: none;
   background-color: #f0eeee;
-  width: 100%;
+  width: 91%;
   padding: 0.5rem 1rem;
   border-radius: 10px;
-  transition: all 0.25s ease-in;
-  transform-origin: center;
-}
-.header .search__input:focus {
-  transform: scaleX(1.17);
 }
 
+.header .search:hover {
+  transform: scaleX(1.09);
+}
+.header .search__icon {
+  font-size: larger;
+  font-weight: 900;
+  margin-left: 0.3rem;
+}
 .header .options .profile {
   display: flex;
   align-items: center;
+}
+.header .options {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.header .options > * {
+  padding-left: 1rem;
 }
 .header .options .profile__image {
   margin-right: 0.6rem;

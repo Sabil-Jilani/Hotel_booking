@@ -6,6 +6,8 @@
     }
   }
   .search {
+    transition: all 0.25s ease-in;
+    transform-origin: center;
     min-width: 35%;
     &__input {
       outline: none;
@@ -14,10 +16,8 @@
       width: 100%;
       padding: 0.5rem 1rem;
       border-radius: 10px;
-      transition: all 0.25s ease-in;
-      transform-origin: center;
     }
-    &__input:focus {
+    &:focus {
       transform: scaleX(1.17);
     }
   }
