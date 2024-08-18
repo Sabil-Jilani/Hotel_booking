@@ -1,0 +1,348 @@
+html {
+  line-height: 1.2;
+  color: #333;
+  box-sizing: border-box;
+}
+@media (max-width: 1799px) {
+  html {
+    font-size: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  html {
+    font-size: 75%;
+  }
+}
+@media (max-width: 56.25em) {
+  html {
+    font-size: 62.5%;
+  }
+}
+@media (max-width: 37.5rem) {
+  html {
+    font-size: 56%;
+  }
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(to right bottom, #eb2f64, #ba265d);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 5.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #333;
+}
+
+main {
+  background-color: white;
+  box-shadow: 0.8rem 0.8rem 3rem 3px black;
+  border-radius: 5px;
+}
+
+.header {
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.body {
+  display: flex;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+}
+
+.about {
+  background-color: #f0eeee;
+  display: flex;
+  padding: 2.4rem;
+  color: #777;
+  line-height: 1.2;
+}
+.about .details {
+  padding: 1.5rem;
+  background-color: white;
+  margin-right: 2.4rem;
+}
+.about .details > *:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.about .CTA {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about .CTA .reviews {
+  background-color: white;
+  padding: 1.5rem;
+  margin-bottom: 2.4rem;
+}
+
+.header .brand__img {
+  width: 4.5rem;
+  display: block;
+}
+
+.header .search {
+  min-width: 35%;
+}
+.header .search__input {
+  outline: none;
+  border: none;
+  background-color: #f0eeee;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  transition: all 0.25s ease-in;
+  transform-origin: center;
+}
+.header .search__input:focus {
+  transform: scaleX(1.17);
+}
+
+.header .options .profile {
+  display: flex;
+  align-items: center;
+}
+.header .options .profile__image {
+  margin-right: 0.6rem;
+}
+.header .options .profile__image__box {
+  display: block;
+  width: 2.5rem;
+  aspect-ratio: 1;
+  border: 1px solid black;
+  border-radius: 100%;
+}
+.header .options .profile__name {
+  font-size: 1rem;
+  font-family: system-ui;
+}
+
+.body .nav {
+  width: 77%;
+  background-color: #333;
+  color: #faf9f9;
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.body .nav .nav__list {
+  list-style: none;
+  text-align: center;
+}
+.body .nav .nav__list .nav__items {
+  z-index: 1;
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-family: system-ui;
+  line-height: 1.3;
+  text-transform: uppercase;
+  padding: 1.2rem;
+  margin: 0.65rem 0;
+  position: relative;
+}
+.body .nav .nav__list .nav__items::before {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  height: 0%;
+  width: 1px;
+  background-color: #ff3366;
+  transition: height 0.3s ease-out, width 0.3s 0.3s ease-out;
+  transform-origin: left bottom;
+}
+.body .nav .nav__list .nav__items:hover::before {
+  height: 100%;
+  width: 100%;
+}
+.body .nav__copy {
+  padding: 1rem 2rem 0;
+  text-align: center;
+}
+
+.data .photo {
+  display: flex;
+}
+.data .photo__img--box {
+  display: block;
+  width: 100%;
+}
+
+.data .rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.data .rating .head {
+  color: inherit;
+  margin: 0 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: system-ui;
+}
+.data .rating__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.data .rating__right .location {
+  margin: 0 1.5rem;
+}
+.data .rating__right .rate {
+  color: white;
+  padding: 0.8rem;
+  background-color: #eb2f64;
+}
+.data .rating__right .rate__num {
+  color: inherit;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+}
+.data .rating__right .rate__text {
+  color: inherit;
+  font-size: 0.7rem;
+}
+
+.about .details .features {
+  display: flex;
+  padding: 2rem 1rem;
+  list-style: none;
+  border: 1px solid #ccc;
+  border-width: 1px 0;
+  flex-wrap: wrap;
+}
+.about .details .features > *:not(:last-child) {
+  margin-bottom: 0.6rem;
+}
+.about .details .features__items {
+  padding-left: 1.5rem;
+  width: 50%;
+}
+
+.about .details .recomandation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about .details .recomandation__paragraph {
+  width: 53%;
+}
+.about .details .recomandation__img--box {
+  width: 3.5rem;
+  border-radius: 100%;
+  border: 0.3rem solid white;
+  margin-left: -1.1rem;
+}
+
+.CTA .reviews > *:not(:last-child) {
+  margin-bottom: 2.3rem;
+}
+
+.CTA .reviews__user {
+  display: flex;
+  align-items: center;
+}
+.CTA .reviews__user__img--box {
+  display: block;
+  width: 2.5rem;
+  border-radius: 100%;
+}
+.CTA .reviews__user__detail {
+  margin: 0 auto 0 1.3rem;
+}
+.CTA .reviews__user__detail .name {
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+.CTA .reviews__user__detail .date {
+  font-size: 0.8rem;
+}
+.CTA .reviews__user__rating {
+  font-size: x-large;
+  color: #eb2f64;
+}
+
+.btn-2 {
+  border-bottom: 1px solid;
+}
+.btn-2:hover {
+  color: #ba265d;
+  border-bottom: 1px solid #ba265d;
+  word-spacing: 2px;
+}
+
+.btn {
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  transition: all 0.3s;
+}
+
+.footer {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.footer__btn {
+  border-radius: 50px;
+  background-color: #ff3366;
+  overflow: hidden;
+  text-align: center;
+  color: white;
+  position: relative;
+  font-weight: 500;
+}
+.footer__btn__visible {
+  font-weight: 500;
+  text-align: center;
+  color: white;
+  padding: 0.6rem 1rem;
+  background-color: #ff3366;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
+.footer__btn:hover .footer__btn__invisible {
+  top: 0;
+}
+.footer__btn:hover .footer__btn__visible {
+  transform: translateY(105%);
+}
+.footer__btn__invisible {
+  height: 100%;
+  background-color: #ff3366;
+  text-transform: uppercase;
+  border-radius: 50px;
+  text-transform: uppercase;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+}

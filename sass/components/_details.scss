@@ -1,0 +1,35 @@
+.about {
+  .details {
+    .features {
+      display: flex;
+      padding: 2rem 1rem;
+      list-style: none;
+      border: 1px solid $Grey-light-4;
+      border-width: 1px 0;
+      flex-wrap: wrap;
+      & > *:not(:last-child) {
+        margin-bottom: 0.6rem;
+      }
+      &__items {
+        padding-left: 1.5rem;
+        width: 50%;
+      }
+    }
+    .recomandation {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &__paragraph {
+        width: 53%;
+      }
+      &__img {
+        &--box {
+          width: 3.5rem;
+          border-radius: 100%;
+          border: 0.3rem solid white;
+          margin-left: -1.1rem;
+        }
+      }
+    }
+  }
+}

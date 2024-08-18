@@ -1,0 +1,27 @@
+html {
+  //   @include responsive("big-desk") {
+  //     font-size: 75%;
+  //   }
+  line-height: 1.2;
+  color: $Grey-dark-1;
+  @include responsive("normal") {
+    font-size: 100%;
+  }
+  @include responsive("tab-land") {
+    font-size: 75%;
+  }
+  @include responsive("tab-port") {
+    font-size: 62.5%;
+  }
+  @include responsive("phone") {
+    font-size: 56%;
+  }
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}

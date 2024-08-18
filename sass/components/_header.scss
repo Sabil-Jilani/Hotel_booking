@@ -1,0 +1,44 @@
+.header {
+  .brand {
+    &__img {
+      width: 4.5rem;
+      display: block;
+    }
+  }
+  .search {
+    min-width: 35%;
+    &__input {
+      outline: none;
+      border: none;
+      background-color: $Grey-light-3;
+      width: 100%;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      transition: all 0.25s ease-in;
+      transform-origin: center;
+    }
+    &__input:focus {
+      transform: scaleX(1.17);
+    }
+  }
+
+  .options {
+    .profile {
+      display: flex;
+      align-items: center;
+      &__image {
+        margin-right: 0.6rem;
+        &__box {
+          display: block;
+          width: 2.5rem;
+          border: 1px solid black;
+          border-radius: 100%;
+        }
+      }
+      &__name {
+        font-size: 1rem;
+        font-family: system-ui;
+      }
+    }
+  }
+}

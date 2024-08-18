@@ -1,0 +1,47 @@
+.data {
+  .photo {
+    display: flex;
+    &__img {
+      &--box {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+  .rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .head {
+      color: inherit;
+      margin: 0 2rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+      font-family: system-ui;
+    }
+    &__right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .location {
+        margin: 0 1.5rem;
+      }
+      .rate {
+        color: white;
+        padding: 0.8rem;
+        background-color: $Primary;
+        &__num {
+          color: inherit;
+          text-align: center;
+          font-size: 1.8rem;
+          font-weight: 700;
+          margin: 0 0 0.5rem 0;
+        }
+        &__text {
+          color: inherit;
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+}

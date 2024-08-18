@@ -1,0 +1,27 @@
+@mixin responsive($break) {
+  @if $break== "big-desk" {
+    @media (min-width: 1800px) {
+      @content;
+    }
+  }
+  @if $break== "normal" {
+    @media (max-width: 1799px) {
+      @content;
+    }
+  }
+  @if $break== "tab-land" {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+  @if $break== "tab-port" {
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+  @if $break== "phone" {
+    @media (max-width: 37.5rem) {
+      @content;
+    }
+  }
+}

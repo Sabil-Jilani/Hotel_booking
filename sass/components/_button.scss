@@ -1,0 +1,16 @@
+.btn-2 {
+  border-bottom: 1px solid;
+  &:hover {
+    color: $Primary-dark;
+    border-bottom: 1px solid $Primary-dark;
+    word-spacing: 2px;
+  }
+}
+.btn {
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  transition: all 0.3s;
+}
